@@ -9,10 +9,16 @@ interface Card {
   info: string;
 }
 
+interface User {
+  id: string;
+  name: string;
+  points: number;
+}
+
 const initialCards: Card[] = Array.from({ length: 20 }, (_, index) => ({
   id: index,
-  name: `Карточка ${index + 1}`,
-  info: `Описание ${index + 1}`,
+  name: `Card ${index + 1}`,
+  info: `Information about Card ${index + 1}`,
 }));
 
 const Board = () => {
@@ -46,7 +52,7 @@ const Board = () => {
   }, []);
 
   useEffect(() => {
-    socket.on("updateUsers", (users: any[]) => {
+    socket.on("updateUsers", (users: User[]) => {
       const currentUser = users.find((user) => user.id === socket.id);
       if (currentUser && currentUser.name === "admin") {
         setAdmin(true);
@@ -108,7 +114,7 @@ const Board = () => {
                   }}
                   className="ml-2 bg-blue-500 text-white px-2 py-1 rounded"
                 >
-                  Редак.
+                  Edit
                 </button>
                 <button
                   onClick={(e) => {
@@ -117,7 +123,7 @@ const Board = () => {
                   }}
                   className="ml-2 bg-red-500 text-white px-2 py-1 rounded"
                 >
-                  Восс.
+                  Reset Color
                 </button>
               </>
             )}
@@ -130,7 +136,7 @@ const Board = () => {
           <div className="bg-white p-4 rounded">
             {editCard ? (
               <>
-                <h2 className="text-xl mb-4">Редак.</h2>
+                <h2 className="text-xl mb-4">Edit Card</h2>
                 <input
                   type="text"
                   value={editCard.name}
@@ -148,13 +154,13 @@ const Board = () => {
                   onClick={handleSaveCard}
                   className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
                 >
-                  Сохранить
+                  Save
                 </button>
                 <button
                   onClick={closeModal}
                   className="bg-red-500 text-white px-4 py-2 rounded"
                 >
-                  Отменить
+                  Cancel
                 </button>
               </>
             ) : (
@@ -164,7 +170,7 @@ const Board = () => {
                   onClick={closeModal}
                   className="bg-blue-500 text-white px-4 py-2 rounded"
                 >
-                  Закрыть
+                  Close
                 </button>
               </>
             )}
