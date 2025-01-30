@@ -1,10 +1,13 @@
 const { createServer } = require("http");
 const next = require("next");
 const { Server } = require("socket.io");
+const { v4: uuidv4 } = require("uuid");
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
+
+let users = [];
 
 app.prepare().then(() => {
   const server = createServer((req, res) => {
@@ -15,13 +18,25 @@ app.prepare().then(() => {
 
   io.on("connection", (socket) => {
     console.log("New client connected");
+    const userId = uuidv4();
+    users.push({ id: socket.id, name: userId });
+    io.emit("updateUsers", users);
 
     socket.on("selectCard", (cardIndex) => {
       io.emit("updateCards", cardIndex);
     });
 
+    socket.on("changeName", (newName) => {
+      users = users.map((user) =>
+        user.id === socket.id ? { ...user, name: newName } : user
+      );
+      io.emit("updateUsers", users);
+    });
+
     socket.on("disconnect", () => {
       console.log("Client disconnected");
+      users = users.filter((user) => user.id !== socket.id);
+      io.emit("updateUsers", users);
     });
   });
 

@@ -9,9 +9,9 @@ export default function Home() {
           <li className="mb-2">
             Чтобы начать игру нажми 
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold font-mono">
-            "Играть"
+            Играть!
             </code>
-            .
+            
           </li>
           <li>Если нету аккаунта авторизуйся</li>
         </ol>
