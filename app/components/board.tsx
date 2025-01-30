@@ -17,8 +17,8 @@ interface User {
 
 const initialCards: Card[] = Array.from({ length: 20 }, (_, index) => ({
   id: index,
-  name: `Card ${index + 1}`,
-  info: `Information about Card ${index + 1}`,
+  name: `Карточка ${index + 1}`,
+  info: `Опиши ${index + 1}`,
 }));
 
 const Board = () => {
@@ -114,7 +114,7 @@ const Board = () => {
                   }}
                   className="ml-2 bg-blue-500 text-white px-2 py-1 rounded"
                 >
-                  Edit
+                  Ред.
                 </button>
                 <button
                   onClick={(e) => {
@@ -123,7 +123,7 @@ const Board = () => {
                   }}
                   className="ml-2 bg-red-500 text-white px-2 py-1 rounded"
                 >
-                  Reset Color
+                  Восс.
                 </button>
               </>
             )}
@@ -136,7 +136,7 @@ const Board = () => {
           <div className="bg-white p-4 rounded">
             {editCard ? (
               <>
-                <h2 className="text-xl mb-4">Edit Card</h2>
+                <h2 className="text-xl mb-4">Ред. Карточку</h2>
                 <input
                   type="text"
                   value={editCard.name}
@@ -154,13 +154,13 @@ const Board = () => {
                   onClick={handleSaveCard}
                   className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
                 >
-                  Save
+                  Сохранить
                 </button>
                 <button
                   onClick={closeModal}
                   className="bg-red-500 text-white px-4 py-2 rounded"
                 >
-                  Cancel
+                  Отменить
                 </button>
               </>
             ) : (
@@ -170,7 +170,7 @@ const Board = () => {
                   onClick={closeModal}
                   className="bg-blue-500 text-white px-4 py-2 rounded"
                 >
-                  Close
+                  Закрыть
                 </button>
               </>
             )}
