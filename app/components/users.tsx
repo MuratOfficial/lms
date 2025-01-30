@@ -41,13 +41,13 @@ const Users = () => {
 
   return (
     <div className="p-4 border-l">
-      <h2 className="text-xl mb-4">Connected Users</h2>
+      <h2 className="text-xl mb-4">Подключенные</h2>
       <table className="min-w-full bg-white">
         <thead>
           <tr>
-            <th className="py-2">Name</th>
-            <th className="py-2">Points</th>
-            {admin && <th className="py-2">Actions</th>}
+            <th className="py-2">Имя</th>
+            <th className="py-2">Очки</th>
+            {admin && <th className="py-2">Действия</th>}
           </tr>
         </thead>
         <tbody>
@@ -80,14 +80,14 @@ const Users = () => {
           type="text"
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
-          placeholder="Enter new name"
+          placeholder="Запиши свое имя"
           className="border p-2 rounded"
         />
         <button
           onClick={handleChangeName}
           className="ml-2 bg-blue-500 text-white px-4 py-2 rounded"
         >
-          Change Name
+          Изм. имя
         </button>
       </div>
     </div>

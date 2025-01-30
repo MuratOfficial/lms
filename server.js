@@ -8,6 +8,11 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 let users = [];
+let cards = Array.from({ length: 20 }, (_, index) => ({
+  id: index,
+  name: `Card ${index + 1}`,
+  info: `Information about Card ${index + 1}`,
+}));
 
 app.prepare().then(() => {
   const server = createServer((req, res) => {
@@ -38,6 +43,17 @@ app.prepare().then(() => {
         user.id === userId ? { ...user, points } : user
       );
       io.emit("updateUsers", users);
+    });
+
+    socket.on("updateCardDetails", (updatedCard) => {
+      cards = cards.map((card) =>
+        card.id === updatedCard.id ? updatedCard : card
+      );
+      io.emit("updateCardDetails", updatedCard);
+    });
+
+    socket.on("resetCardColor", (cardIndex) => {
+      io.emit("resetCardColor", cardIndex);
     });
 
     socket.on("disconnect", () => {
