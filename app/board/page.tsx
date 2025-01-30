@@ -1,44 +1,10 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { socket } from "../socket";
+import Board from "../components/board";
 
 export default function Home() {
-  const [isConnected, setIsConnected] = useState<boolean>(false);
-  const [transport, setTransport] = useState<string>("N/A");
-
-  useEffect(() => {
-    if (socket.connected) {
-      onConnect();
-    }
-
-    function onConnect() {
-      setIsConnected(true);
-      setTransport(socket.io.engine.transport.name);
-
-      socket.io.engine.on("upgrade", (transport: any) => {
-        setTransport(transport.name);
-      });
-    }
-
-    function onDisconnect() {
-      setIsConnected(false);
-      setTransport("N/A");
-    }
-
-    socket.on("connect", onConnect);
-    socket.on("disconnect", onDisconnect);
-
-    return () => {
-      socket.off("connect", onConnect);
-      socket.off("disconnect", onDisconnect);
-    };
-  }, []);
-
   return (
-    <div>
-      <p>Status: {isConnected ? "connected" : "disconnected"}</p>
-      <p>Transport: {transport}</p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      <h1 className="text-2xl font-bold mb-4">Card Selection Board</h1>
+      <Board />
     </div>
   );
 }

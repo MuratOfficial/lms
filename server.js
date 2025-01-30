@@ -1,29 +1,32 @@
-import { createServer } from "node:http";
-import next from "next";
-import { Server } from "socket.io";
+const { createServer } = require("http");
+const next = require("next");
+const { Server } = require("socket.io");
 
 const dev = process.env.NODE_ENV !== "production";
-const hostname = "localhost";
-const port = 3000;
-
-const app = next({ dev, hostname, port });
-const handler = app.getRequestHandler();
+const app = next({ dev });
+const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-  const httpServer = createServer(handler);
-
-  const io = new Server(httpServer);
-
-  io.on("connection", (socket) => {
-    // ...
+  const server = createServer((req, res) => {
+    handle(req, res);
   });
 
-  httpServer
-    .once("error", (err) => {
-      console.error(err);
-      process.exit(1);
-    })
-    .listen(port, () => {
-      console.log(`> Ready on http://${hostname}:${port}`);
+  const io = new Server(server);
+
+  io.on("connection", (socket) => {
+    console.log("New client connected");
+
+    socket.on("selectCard", (cardIndex) => {
+      io.emit("updateCards", cardIndex);
     });
+
+    socket.on("disconnect", () => {
+      console.log("Client disconnected");
+    });
+  });
+
+  server.listen(3000, (err) => {
+    if (err) throw err;
+    console.log("> Ready on http://localhost:3000");
+  });
 });
