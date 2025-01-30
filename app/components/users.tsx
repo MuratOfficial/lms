@@ -6,15 +6,21 @@ import { socket } from "../socket";
 interface User {
   id: string;
   name: string;
+  points: number;
 }
 
 const Users = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [newName, setNewName] = useState<string>("");
+  const [admin, setAdmin] = useState<boolean>(false);
 
   useEffect(() => {
     socket.on("updateUsers", (users: User[]) => {
       setUsers(users);
+      const currentUser = users.find((user) => user.id === socket.id);
+      if (currentUser && currentUser.name === "admin") {
+        setAdmin(true);
+      }
     });
 
     return () => {
@@ -29,14 +35,46 @@ const Users = () => {
     }
   };
 
+  const handleUpdatePoints = (userId: string, points: number) => {
+    socket.emit("updatePoints", { userId, points });
+  };
+
   return (
     <div className="p-4 border-l">
       <h2 className="text-xl mb-4">Connected Users</h2>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-      </ul>
+      <table className="min-w-full bg-white">
+        <thead>
+          <tr>
+            <th className="py-2">Name</th>
+            <th className="py-2">Points</th>
+            {admin && <th className="py-2">Actions</th>}
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td className="border px-4 py-2">{user.name}</td>
+              <td className="border px-4 py-2">{user.points}</td>
+              {admin && (
+                <td className="border px-4 py-2">
+                  <button
+                    onClick={() => handleUpdatePoints(user.id, user.points + 1)}
+                    className="bg-blue-500 text-white px-2 py-1 rounded mr-2"
+                  >
+                    +1
+                  </button>
+                  <button
+                    onClick={() => handleUpdatePoints(user.id, user.points - 1)}
+                    className="bg-red-500 text-white px-2 py-1 rounded"
+                  >
+                    -1
+                  </button>
+                </td>
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <div className="mt-4">
         <input
           type="text"

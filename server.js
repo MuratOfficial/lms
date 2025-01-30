@@ -19,7 +19,7 @@ app.prepare().then(() => {
   io.on("connection", (socket) => {
     console.log("New client connected");
     const userId = uuidv4();
-    users.push({ id: socket.id, name: userId });
+    users.push({ id: socket.id, name: userId, points: 0 });
     io.emit("updateUsers", users);
 
     socket.on("selectCard", (cardIndex) => {
@@ -29,6 +29,13 @@ app.prepare().then(() => {
     socket.on("changeName", (newName) => {
       users = users.map((user) =>
         user.id === socket.id ? { ...user, name: newName } : user
+      );
+      io.emit("updateUsers", users);
+    });
+
+    socket.on("updatePoints", ({ userId, points }) => {
+      users = users.map((user) =>
+        user.id === userId ? { ...user, points } : user
       );
       io.emit("updateUsers", users);
     });
