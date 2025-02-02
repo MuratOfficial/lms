@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
-import { socket } from "../socket";
 
 interface User {
   id: string;
@@ -15,28 +14,48 @@ const Users = () => {
   const [admin, setAdmin] = useState<boolean>(false);
 
   useEffect(() => {
-    socket.on("updateUsers", (users: User[]) => {
-      setUsers(users);
-      const currentUser = users.find((user) => user.id === socket.id);
-      if (currentUser && currentUser.name === "admin") {
-        setAdmin(true);
+    const eventSource = new EventSource('/api/events');
+
+    eventSource.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      // Handle SSE events here
+      if (data.type === 'updateUsers') {
+        setUsers(data.users);
+        const currentUser = data.users.find((user: User) => user.id === data.socketId);
+        if (currentUser && currentUser.name === "admin") {
+          setAdmin(true);
+        }
       }
-    });
+    };
 
     return () => {
-      socket.off("updateUsers");
+      eventSource.close();
     };
   }, []);
 
   const handleChangeName = () => {
     if (newName.trim()) {
-      socket.emit("changeName", newName);
+      // Emit event to server
+      fetch('/api/changeName', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ newName }),
+      });
       setNewName("");
     }
   };
 
   const handleUpdatePoints = (userId: string, points: number) => {
-    socket.emit("updatePoints", { userId, points });
+    // Emit event to server
+    fetch('/api/updatePoints', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ userId, points }),
+    });
   };
 
   return (

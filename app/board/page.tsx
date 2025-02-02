@@ -1,14 +1,13 @@
-import Board from "../components/board";
-import Users from "../components/users";
+import GameList from "./components/game-list";
 
-export default function Home() {
+export default function Board() {
+
+  
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">Игра Угадай фразу (по буткемповский)</h1>
-      <div className="flex">
-        <Board />
-        <Users />
-      </div>
+      <h1 className="text-5xl font-bold mb-4">Игры</h1>
+      <GameList/>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import RealTimeUpdates from "./components/real-time-updates";
+import Chat from "./components/chat";
 
 export default function Home() {
   return (

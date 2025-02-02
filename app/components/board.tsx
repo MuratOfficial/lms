@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
-import { socket } from "../socket";
 
 interface Card {
   id: number;
@@ -30,43 +29,21 @@ const Board = () => {
   const [editCard, setEditCard] = useState<Card | null>(null);
 
   useEffect(() => {
-    socket.on("updateCards", (cardIndex: number) => {
-      setSelectedCards((prev) => [...prev, cardIndex]);
-    });
+    const eventSource = new EventSource('/api/events');
 
-    socket.on("updateCardDetails", (updatedCard: Card) => {
-      setCards((prevCards) =>
-        prevCards.map((card) => (card.id === updatedCard.id ? updatedCard : card))
-      );
-    });
-
-    socket.on("resetCardColor", (cardIndex: number) => {
-      setSelectedCards((prev) => prev.filter((id) => id !== cardIndex));
-    });
-
-    return () => {
-      socket.off("updateCards");
-      socket.off("updateCardDetails");
-      socket.off("resetCardColor");
+    eventSource.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      // Handle SSE events here
     };
-  }, []);
-
-  useEffect(() => {
-    socket.on("updateUsers", (users: User[]) => {
-      const currentUser = users.find((user) => user.id === socket.id);
-      if (currentUser && currentUser.name === "admin") {
-        setAdmin(true);
-      }
-    });
 
     return () => {
-      socket.off("updateUsers");
+      eventSource.close();
     };
   }, []);
 
   const handleCardClick = (index: number) => {
     if (!admin && !selectedCards.includes(index)) {
-      socket.emit("selectCard", index);
+      // Emit event to server
     }
     setModalContent(cards[index].info);
     setModalOpen(true);
@@ -83,14 +60,14 @@ const Board = () => {
 
   const handleSaveCard = () => {
     if (editCard) {
-      socket.emit("updateCardDetails", editCard);
+      // Emit event to server
       setModalOpen(false);
       setEditCard(null);
     }
   };
 
   const handleResetCardColor = (cardIndex: number) => {
-    socket.emit("resetCardColor", cardIndex);
+    // Emit event to server
   };
 
   return (
