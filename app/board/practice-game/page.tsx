@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { socket } from "@/app/socket";
 import Users from "@/app/components/users";
+import { useEffect, useState } from "react";
 
 interface Card {
   id: number;
@@ -16,7 +15,7 @@ interface Card {
   answeredBy?: string[];
 }
 
-const NewGame = () => {
+export default function SSEClient() {
   const [selectedCards, setSelectedCards] = useState<number[]>([]);
   const [cards, setCards] = useState<Card[]>([]);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -32,38 +31,40 @@ const NewGame = () => {
 
     loadCards();
 
-    socket.on("updateCards", (cardIndex: number) => {
-      setSelectedCards((prev) => [...prev, cardIndex]);
-    });
+    const eventSource = new EventSource("/api/sse");
 
-    socket.on("updateCardDetails", (updatedCard: Card) => {
-      setCards((prevCards) =>
-        prevCards.map((card) => (card.id === updatedCard.id ? updatedCard : card))
-      );
-    });
-
-    socket.on("resetCardColor", (cardIndex: number) => {
-      setSelectedCards((prev) => prev.filter((id) => id !== cardIndex));
-    });
-
-    socket.on("updateUsers", (users: User[]) => {
-      const currentUser = users.find((user) => user.id === socket.id);
-      if (currentUser && currentUser.name === "admin") {
-        setAdmin(true);
+    eventSource.onmessage = (event) => {
+      const { event: eventType, data } = JSON.parse(event.data);
+      if (eventType === "updateCards") {
+        setSelectedCards((prev) => [...prev, data]);
+      } else if (eventType === "updateCardDetails") {
+        setCards((prevCards) =>
+          prevCards.map((card) => (card.id === data.id ? data : card))
+        );
+      } else if (eventType === "resetCardColor") {
+        setSelectedCards((prev) => prev.filter((id) => id !== data));
+      } else if (eventType === "updateUsers") {
+        const currentUser = data.find((user: any) => user.id === "user-id"); // Replace with actual user ID logic
+        if (currentUser && currentUser.name === "admin") {
+          setAdmin(true);
+        }
       }
-    });
+    };
 
     return () => {
-      socket.off("updateCards");
-      socket.off("updateCardDetails");
-      socket.off("resetCardColor");
-      socket.off("updateUsers");
+      eventSource.close();
     };
   }, []);
 
   const handleCardClick = (index: number) => {
     if (!selectedCards.includes(index)) {
-      socket.emit("selectCard", index);
+      fetch("/api/sse", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ event: "selectCard", data: index }),
+      });
     }
     setModalContent(cards[index]);
     setModalOpen(true);
@@ -75,8 +76,8 @@ const NewGame = () => {
 
   const handleAnswer = (answer: string) => {
     if (modalContent) {
-      const userId = socket.id;
-      if (modalContent.answeredBy?.includes(userId!)) {
+      const userId = "user-id"; // Replace with actual user ID logic
+      if (modalContent.answeredBy?.includes(userId)) {
         alert("You have already answered this card.");
         return;
       }
@@ -87,12 +88,19 @@ const NewGame = () => {
         color: answer === modalContent.correctAnswer ? "green" : "red",
       };
 
-      socket.emit(answer === modalContent.correctAnswer ? "correctAnswer" : "wrongAnswer", {
-        cardId: modalContent.id,
-        points: modalContent.points,
+      fetch("/api/sse", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          event: answer === modalContent.correctAnswer ? "correctAnswer" : "wrongAnswer",
+          data: { cardId: modalContent.id, points: modalContent.points },
+        }),
       });
-      setCards((prevCards:any) =>
-        prevCards.map((card:any) => (card.id === modalContent.id ? updatedCard : card))
+
+      setCards((prevCards) =>
+        prevCards.map((card) => (card.id === modalContent.id ? updatedCard : card))
       );
       setModalOpen(false);
     }
@@ -102,7 +110,13 @@ const NewGame = () => {
     const updatedCard = cards.find((card) => card.id === cardId);
     if (updatedCard) {
       updatedCard.color = color;
-      socket.emit("updateCardDetails", updatedCard);
+      fetch("/api/sse", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ event: "updateCardDetails", data: updatedCard }),
+      });
     }
   };
 
@@ -200,6 +214,4 @@ const NewGame = () => {
       </div>
     </div>
   );
-};
-
-export default NewGame;
+}
