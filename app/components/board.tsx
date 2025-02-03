@@ -8,11 +8,6 @@ interface Card {
   info: string;
 }
 
-interface User {
-  id: string;
-  name: string;
-  points: number;
-}
 
 const initialCards: Card[] = Array.from({ length: 20 }, (_, index) => ({
   id: index,

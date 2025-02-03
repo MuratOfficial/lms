@@ -1,6 +1,7 @@
 "use client";
 
 import Users from "@/app/components/users";
+import { User } from "@prisma/client";
 import { useEffect, useState } from "react";
 
 interface Card {
@@ -44,7 +45,7 @@ export default function SSEClient() {
       } else if (eventType === "resetCardColor") {
         setSelectedCards((prev) => prev.filter((id) => id !== data));
       } else if (eventType === "updateUsers") {
-        const currentUser = data.find((user: any) => user.id === "user-id"); // Replace with actual user ID logic
+        const currentUser = data.find((user: User) => user.id === "user-id"); // Replace with actual user ID logic
         if (currentUser && currentUser.name === "admin") {
           setAdmin(true);
         }

@@ -1,6 +1,12 @@
+
 import { NextResponse } from "next/server";
 
-let clients: any[] = [];
+interface Client {
+  id:number;
+  sendEvent(data:string):void
+}
+
+let clients: Client[] = [];
 
 export async function GET() {
   const encoder = new TextEncoder();
@@ -13,7 +19,6 @@ export async function GET() {
 
       clients.push({ id: clientId, sendEvent });
 
-      // Remove client when the connection is closed
       controller.close = () => {
         clients = clients.filter(client => client.id !== clientId);
       };

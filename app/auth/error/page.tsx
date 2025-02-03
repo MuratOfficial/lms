@@ -1,5 +1,4 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { RegisterForm } from '@/components/ui/registration-form'
 import { cn } from '@/lib/utils'
 import React from 'react'
 
