@@ -229,81 +229,81 @@
   },
   {
     "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для сортировки элементов массива?",
-    "answer": "sort"
-  },
-  {
-    "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для фильтрации элементов массива?",
-    "options": ["filter", "map", "reduce", "forEach"],
-    "answer": "filter"
-  },
-  {
-    "category": "HTML",
-    "type": "multiple-choice",
-    "question": "Какой тег используется для создания списка с нумерацией?",
-    "options": ["<ol>", "<ul>", "<li>", "<dl>"],
-    "answer": "<ol>"
-  },
-  {
-    "category": "CSS",
-    "type": "input",
-    "question": "Какое CSS-свойство используется для установки границы элемента?",
-    "answer": "border"
+    "question": "Какой оператор используется для проверки равенства значений?",
+    "options": ["==", "=", "===", "!="],
+    "answer": "=="
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для создания нового массива из результатов вызова функции для каждого элемента массива?",
-    "answer": "map"
+    "question": "Какой оператор используется для присваивания значения переменной?",
+    "answer": "="
   },
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для уменьшения массива до одного значения?",
-    "options": ["reduce", "map", "filter", "forEach"],
-    "answer": "reduce"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой оператор используется для преобразования строки в число?",
-    "options": ["parseInt", "toString", "Number", "parseFloat"],
-    "answer": "parseInt"
+    "question": "Какой тип данных используется для хранения текста?",
+    "options": ["string", "number", "boolean", "object"],
+    "answer": "string"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для преобразования числа в строку?",
-    "answer": "toString"
+    "question": "Какой тип данных используется для хранения чисел?",
+    "answer": "number"
   },
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для проверки типа переменной?",
-    "options": ["typeof", "instanceof", "isType", "checkType"],
-    "answer": "typeof"
+    "question": "Какой тип данных используется для хранения логических значений?",
+    "options": ["boolean", "string", "number", "object"],
+    "answer": "boolean"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой оператор используется для строгого сравнения значений и типов?",
+    "question": "Какой оператор используется для проверки неравенства значений?",
+    "answer": "!="
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки строгого равенства значений и типов?",
+    "options": ["===", "==", "=", "!=="],
     "answer": "==="
   },
   {
     "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки строгого неравенства значений и типов?",
+    "answer": "!=="
+  },
+  {
+    "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для вызова функции с заданным значением this?",
-    "options": ["call", "apply", "bind", "invoke"],
-    "answer": "call"
+    "question": "Какой оператор используется для сложения чисел?",
+    "options": ["+", "-", "*", "/"],
+    "answer": "+"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для создания новой функции с заданным значением this?",
-    "answer": "bind"
+    "question": "Какой оператор используется для вычитания чисел?",
+    "answer": "-"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для умножения чисел?",
+    "options": ["*", "+", "-", "/"],
+    "answer": "*"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для деления чисел?",
+    "answer": "/"
   },
   {
     "category": "JavaScript",
@@ -321,183 +321,145 @@
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для выбора одного из множества блоков кода для выполнения?",
-    "options": ["switch", "if", "else", "case"],
-    "answer": "switch"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой оператор используется внутри switch для определения блока кода, который будет выполнен?",
-    "answer": "case"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой цикл используется для выполнения блока кода, пока условие истинно?",
-    "options": ["while", "for", "do-while", "foreach"],
-    "answer": "while"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
     "question": "Какой цикл используется для выполнения блока кода определенное количество раз?",
+    "options": ["for", "while", "do-while", "foreach"],
     "answer": "for"
   },
   {
     "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой цикл выполняет блок кода хотя бы один раз, а затем повторяет выполнение, пока условие истинно?",
-    "options": ["do-while", "while", "for", "foreach"],
-    "answer": "do-while"
-  },
-  {
-    "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для преобразования объекта в JSON строку?",
-    "answer": "JSON.stringify"
+    "question": "Какой цикл используется для выполнения блока кода, пока условие истинно?",
+    "answer": "while"
   },
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для преобразования JSON строки в объект?",
-    "options": ["JSON.parse", "JSON.stringify", "parseJSON", "toObject"],
-    "answer": "JSON.parse"
+    "question": "Какой тип данных используется для хранения объектов?",
+    "options": ["object", "string", "number", "boolean"],
+    "answer": "object"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для вызова функции для каждого элемента массива?",
-    "answer": "forEach"
+    "question": "Какой оператор используется для проверки, является ли значение null или undefined?",
+    "answer": "== null"
   },
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для создания нового массива из результатов вызова функции для каждого элемента массива?",
-    "options": ["map", "filter", "reduce", "forEach"],
-    "answer": "map"
+    "question": "Какой оператор используется для проверки, является ли значение истинным?",
+    "options": ["true", "false", "null", "undefined"],
+    "answer": "true"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для фильтрации элементов массива на основе условия?",
-    "answer": "filter"
+    "question": "Какой оператор используется для проверки, является ли значение ложным?",
+    "answer": "false"
   },
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для уменьшения массива до одного значения?",
-    "options": ["reduce", "map", "filter", "forEach"],
-    "answer": "reduce"
+    "question": "Какой оператор используется для проверки, является ли значение undefined?",
+    "options": ["undefined", "null", "true", "false"],
+    "answer": "undefined"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для проверки, является ли значение массивом?",
-    "answer": "Array.isArray"
+    "question": "Какой оператор используется для проверки, является ли значение null?",
+    "answer": "null"
   },
   {
     "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для объединения двух массивов?",
-    "options": ["concat", "join", "merge", "combine"],
-    "answer": "concat"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для поиска элемента в массиве?",
-    "answer": "find"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для преобразования массива в строку?",
-    "options": ["join", "concat", "split", "toString"],
-    "answer": "join"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для удаления последнего элемента массива?",
-    "answer": "pop"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для добавления элемента в конец массива?",
-    "options": ["push", "pop", "shift", "unshift"],
-    "answer": "push"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для удаления первого элемента массива?",
-    "answer": "shift"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для добавления элемента в начало массива?",
-    "options": ["unshift", "push", "pop", "shift"],
-    "answer": "unshift"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для сортировки элементов массива?",
-    "answer": "sort"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для проверки, содержит ли массив определенный элемент?",
-    "options": ["includes", "contains", "has", "exists"],
-    "answer": "includes"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для создания нового массива, содержащего элементы, удовлетворяющие условию?",
-    "answer": "filter"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для преобразования строки в массив?",
-    "options": ["split", "join", "concat", "toArray"],
-    "answer": "split"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для объединения всех элементов массива в строку?",
-    "answer": "join"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для создания нового массива с результатами вызова функции для каждого элемента массива?",
-    "options": ["map", "filter", "reduce", "forEach"],
-    "answer": "map"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для проверки, является ли значение NaN (Not-a-Number)?",
+    "question": "Какой оператор используется для проверки, является ли значение NaN (Not-a-Number)?",
+    "options": ["isNaN", "isNumber", "isString", "isBoolean"],
     "answer": "isNaN"
   },
   {
     "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки, является ли значение числом?",
+    "answer": "typeof value === 'number'"
+  },
+  {
+    "category": "JavaScript",
     "type": "multiple-choice",
-    "question": "Какой метод используется для округления числа до ближайшего целого?",
-    "options": ["Math.round", "Math.ceil", "Math.floor", "Math.trunc"],
-    "answer": "Math.round"
+    "question": "Какой оператор используется для проверки, является ли значение строкой?",
+    "options": ["typeof value === 'string'", "typeof value === 'number'", "typeof value === 'boolean'", "typeof value === 'object'"],
+    "answer": "typeof value === 'string'"
   },
   {
     "category": "JavaScript",
     "type": "input",
-    "question": "Какой метод используется для округления числа вверх до ближайшего целого?",
-    "answer": "Math.ceil"
+    "question": "Какой оператор используется для проверки, является ли значение объектом?",
+    "answer": "typeof value === 'object'"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки, является ли значение булевым?",
+    "options": ["typeof value === 'boolean'", "typeof value === 'string'", "typeof value === 'number'", "typeof value === 'object'"],
+    "answer": "typeof value === 'boolean'"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки, является ли значение функцией?",
+    "answer": "typeof value === 'function'"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки, является ли значение массивом?",
+    "options": ["Array.isArray(value)", "typeof value === 'array'", "value instanceof Array", "value.constructor === Array"],
+    "answer": "Array.isArray(value)"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки, является ли значение экземпляром класса?",
+    "answer": "value instanceof ClassName"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки, является ли значение NaN?",
+    "options": ["isNaN(value)", "typeof value === 'NaN'", "value === NaN", "value == NaN"],
+    "answer": "isNaN(value)"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки, является ли значение null?",
+    "answer": "value === null"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки, является ли значение undefined?",
+    "options": ["value === undefined", "typeof value === 'undefined'", "value == undefined", "value === null"],
+    "answer": "value === undefined"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки, является ли значение true?",
+    "answer": "value === true"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки, является ли значение false?",
+    "options": ["value === false", "typeof value === 'false'", "value == false", "value === null"],
+    "answer": "value === false"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для проверки, является ли значение строкой?",
+    "answer": "typeof value === 'string'"
   }
+
 ]
