@@ -1,0 +1,503 @@
+[
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Что такое замыкание?",
+    "options": ["Функция внутри функции", "Метод объекта", "Переменная", "Цикл"],
+    "answer": "Функция внутри функции"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания гиперссылки?",
+    "options": ["<a>", "<link>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для изменения цвета текста?",
+    "answer": "color"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какое ключевое слово используется для объявления переменной?",
+    "answer": "var"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Что такое замыкание?",
+    "options": ["Функция внутри функции", "Метод объекта", "Переменная", "Цикл"],
+    "answer": "Функция внутри функции"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания гиперссылки?",
+    "options": ["<a>", "<link>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для изменения цвета текста?",
+    "answer": "color"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какое ключевое слово используется для объявления переменной?",
+    "answer": "var"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для добавления элемента в конец массива?",
+    "options": ["push", "pop", "shift", "unshift"],
+    "answer": "push"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания заголовка первого уровня?",
+    "options": ["<h1>", "<h2>", "<h3>", "<h4>"],
+    "answer": "<h1>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки фона элемента?",
+    "answer": "background"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какое ключевое слово используется для объявления константы?",
+    "answer": "const"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для удаления последнего элемента массива?",
+    "options": ["pop", "push", "shift", "unshift"],
+    "answer": "pop"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для вставки изображения?",
+    "options": ["<img>", "<image>", "<src>", "<picture>"],
+    "answer": "<img>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для изменения размера шрифта?",
+    "answer": "font-size"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какое ключевое слово используется для объявления переменной, доступной только внутри блока?",
+    "answer": "let"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для объединения двух массивов?",
+    "options": ["concat", "join", "merge", "combine"],
+    "answer": "concat"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания списка с маркерами?",
+    "options": ["<ul>", "<ol>", "<li>", "<dl>"],
+    "answer": "<ul>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки отступа внутри элемента?",
+    "answer": "padding"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для сравнения значений и типов?",
+    "answer": "==="
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для преобразования строки в число?",
+    "options": ["parseInt", "toString", "Number", "parseFloat"],
+    "answer": "parseInt"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания таблицы?",
+    "options": ["<table>", "<tr>", "<td>", "<th>"],
+    "answer": "<table>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки внешнего отступа элемента?",
+    "answer": "margin"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для преобразования числа в строку?",
+    "answer": "toString"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для поиска элемента в массиве?",
+    "options": ["find", "search", "locate", "indexOf"],
+    "answer": "find"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания строки таблицы?",
+    "options": ["<tr>", "<td>", "<th>", "<table>"],
+    "answer": "<tr>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки ширины элемента?",
+    "answer": "width"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для добавления элемента в начало массива?",
+    "answer": "unshift"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для удаления первого элемента массива?",
+    "options": ["shift", "pop", "push", "unshift"],
+    "answer": "shift"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания ячейки таблицы?",
+    "options": ["<td>", "<tr>", "<th>", "<table>"],
+    "answer": "<td>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки высоты элемента?",
+    "answer": "height"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для проверки, является ли значение массивом?",
+    "answer": "Array.isArray"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для преобразования массива в строку?",
+    "options": ["join", "concat", "split", "toString"],
+    "answer": "join"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания заголовка второго уровня?",
+    "options": ["<h2>", "<h1>", "<h3>", "<h4>"],
+    "answer": "<h2>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки цвета фона элемента?",
+    "answer": "background-color"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для сортировки элементов массива?",
+    "answer": "sort"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для фильтрации элементов массива?",
+    "options": ["filter", "map", "reduce", "forEach"],
+    "answer": "filter"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания списка с нумерацией?",
+    "options": ["<ol>", "<ul>", "<li>", "<dl>"],
+    "answer": "<ol>"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое CSS-свойство используется для установки границы элемента?",
+    "answer": "border"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для создания нового массива из результатов вызова функции для каждого элемента массива?",
+    "answer": "map"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для уменьшения массива до одного значения?",
+    "options": ["reduce", "map", "filter", "forEach"],
+    "answer": "reduce"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для преобразования строки в число?",
+    "options": ["parseInt", "toString", "Number", "parseFloat"],
+    "answer": "parseInt"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для преобразования числа в строку?",
+    "answer": "toString"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для проверки типа переменной?",
+    "options": ["typeof", "instanceof", "isType", "checkType"],
+    "answer": "typeof"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для строгого сравнения значений и типов?",
+    "answer": "==="
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для вызова функции с заданным значением this?",
+    "options": ["call", "apply", "bind", "invoke"],
+    "answer": "call"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для создания новой функции с заданным значением this?",
+    "answer": "bind"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для проверки условия?",
+    "options": ["if", "else", "switch", "case"],
+    "answer": "if"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется для выполнения альтернативного блока кода, если условие ложно?",
+    "answer": "else"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой оператор используется для выбора одного из множества блоков кода для выполнения?",
+    "options": ["switch", "if", "else", "case"],
+    "answer": "switch"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой оператор используется внутри switch для определения блока кода, который будет выполнен?",
+    "answer": "case"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой цикл используется для выполнения блока кода, пока условие истинно?",
+    "options": ["while", "for", "do-while", "foreach"],
+    "answer": "while"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой цикл используется для выполнения блока кода определенное количество раз?",
+    "answer": "for"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой цикл выполняет блок кода хотя бы один раз, а затем повторяет выполнение, пока условие истинно?",
+    "options": ["do-while", "while", "for", "foreach"],
+    "answer": "do-while"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для преобразования объекта в JSON строку?",
+    "answer": "JSON.stringify"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для преобразования JSON строки в объект?",
+    "options": ["JSON.parse", "JSON.stringify", "parseJSON", "toObject"],
+    "answer": "JSON.parse"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для вызова функции для каждого элемента массива?",
+    "answer": "forEach"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для создания нового массива из результатов вызова функции для каждого элемента массива?",
+    "options": ["map", "filter", "reduce", "forEach"],
+    "answer": "map"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для фильтрации элементов массива на основе условия?",
+    "answer": "filter"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для уменьшения массива до одного значения?",
+    "options": ["reduce", "map", "filter", "forEach"],
+    "answer": "reduce"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для проверки, является ли значение массивом?",
+    "answer": "Array.isArray"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для объединения двух массивов?",
+    "options": ["concat", "join", "merge", "combine"],
+    "answer": "concat"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для поиска элемента в массиве?",
+    "answer": "find"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для преобразования массива в строку?",
+    "options": ["join", "concat", "split", "toString"],
+    "answer": "join"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для удаления последнего элемента массива?",
+    "answer": "pop"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для добавления элемента в конец массива?",
+    "options": ["push", "pop", "shift", "unshift"],
+    "answer": "push"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для удаления первого элемента массива?",
+    "answer": "shift"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для добавления элемента в начало массива?",
+    "options": ["unshift", "push", "pop", "shift"],
+    "answer": "unshift"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для сортировки элементов массива?",
+    "answer": "sort"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для проверки, содержит ли массив определенный элемент?",
+    "options": ["includes", "contains", "has", "exists"],
+    "answer": "includes"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для создания нового массива, содержащего элементы, удовлетворяющие условию?",
+    "answer": "filter"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для преобразования строки в массив?",
+    "options": ["split", "join", "concat", "toArray"],
+    "answer": "split"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для объединения всех элементов массива в строку?",
+    "answer": "join"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для создания нового массива с результатами вызова функции для каждого элемента массива?",
+    "options": ["map", "filter", "reduce", "forEach"],
+    "answer": "map"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для проверки, является ли значение NaN (Not-a-Number)?",
+    "answer": "isNaN"
+  },
+  {
+    "category": "JavaScript",
+    "type": "multiple-choice",
+    "question": "Какой метод используется для округления числа до ближайшего целого?",
+    "options": ["Math.round", "Math.ceil", "Math.floor", "Math.trunc"],
+    "answer": "Math.round"
+  },
+  {
+    "category": "JavaScript",
+    "type": "input",
+    "question": "Какой метод используется для округления числа вверх до ближайшего целого?",
+    "answer": "Math.ceil"
+  }
+]
