@@ -1,465 +1,483 @@
 [
   {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Что такое замыкание?",
-    "options": ["Функция внутри функции", "Метод объекта", "Переменная", "Цикл"],
-    "answer": "Функция внутри функции"
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки фона элемента?",
+    "answer": "background"
   },
   {
-    "category": "HTML",
+    "category": "CSS",
     "type": "multiple-choice",
-    "question": "Какой тег используется для создания гиперссылки?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "question": "Какое свойство CSS используется для изменения ширины элемента?",
+    "options": ["width", "height", "size", "length"],
+    "answer": "width"
   },
   {
     "category": "CSS",
     "type": "input",
-    "question": "Какое CSS-свойство используется для изменения цвета текста?",
-    "answer": "color"
+    "question": "Какое свойство CSS используется для установки внешних отступов?",
+    "answer": "margin"
   },
   {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какое ключевое слово используется для объявления переменной?",
-    "answer": "var"
-  },
-  {
-    "category": "JavaScript",
+    "category": "CSS",
     "type": "multiple-choice",
-    "question": "Что такое замыкание?",
-    "options": ["Функция внутри функции", "Метод объекта", "Переменная", "Цикл"],
-    "answer": "Функция внутри функции"
-  },
-  {
-    "category": "HTML",
-    "type": "multiple-choice",
-    "question": "Какой тег используется для создания гиперссылки?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "question": "Какое свойство CSS используется для установки рамки вокруг элемента?",
+    "options": ["border", "outline", "frame", "box"],
+    "answer": "border"
   },
   {
     "category": "CSS",
     "type": "input",
-    "question": "Какое CSS-свойство используется для изменения цвета текста?",
-    "answer": "color"
+    "question": "Какое свойство CSS используется для установки стиля шрифта?",
+    "answer": "font-style"
   },
   {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какое ключевое слово используется для объявления переменной?",
-    "answer": "var"
-  },
-  {
-    "category": "JavaScript",
+    "category": "CSS",
     "type": "multiple-choice",
-    "question": "Какой метод используется для добавления элемента в конец массива?",
-    "options": ["push", "pop", "shift", "unshift"],
-    "answer": "push"
+    "question": "Какое свойство CSS используется для выравнивания текста по центру?",
+    "options": ["text-align", "align", "center", "justify"],
+    "answer": "text-align"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки прозрачности элемента?",
+    "answer": "opacity"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для изменения высоты строки текста?",
+    "options": ["line-height", "height", "text-height", "line-size"],
+    "answer": "line-height"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки тени текста?",
+    "answer": "text-shadow"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для изменения курсора мыши при наведении на элемент?",
+    "options": ["cursor", "pointer", "mouse", "hover"],
+    "answer": "cursor"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки интервала между буквами?",
+    "answer": "letter-spacing"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для установки стиля списка?",
+    "options": ["list-style", "list-type", "list-format", "list-design"],
+    "answer": "list-style"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки максимальной ширины элемента?",
+    "answer": "max-width"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для установки минимальной высоты элемента?",
+    "options": ["min-height", "height", "min-size", "size"],
+    "answer": "min-height"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки стиля границы?",
+    "answer": "border-style"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для установки цвета границы?",
+    "options": ["border-color", "color", "outline-color", "frame-color"],
+    "answer": "border-color"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки внутреннего отступа?",
+    "answer": "padding"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для установки стиля списка с изображением?",
+    "options": ["list-style-image", "list-image", "list-background", "list-picture"],
+    "answer": "list-style-image"
+  },
+  {
+    "category": "CSS",
+    "type": "input",
+    "question": "Какое свойство CSS используется для установки ширины границы?",
+    "answer": "border-width"
+  },
+  {
+    "category": "CSS",
+    "type": "multiple-choice",
+    "question": "Какое свойство CSS используется для установки стиля текста?",
+    "options": ["text-style", "font-style", "text-decoration", "text-transform"],
+    "answer": "text-decoration"
+  },
+  {
+    "category": "HTML",
+    "type": "input",
+    "question": "Какой тег используется для создания абзаца?",
+    "answer": "p"
   },
   {
     "category": "HTML",
     "type": "multiple-choice",
     "question": "Какой тег используется для создания заголовка первого уровня?",
-    "options": ["<h1>", "<h2>", "<h3>", "<h4>"],
-    "answer": "<h1>"
-  },
-  {
-    "category": "CSS",
-    "type": "input",
-    "question": "Какое CSS-свойство используется для установки фона элемента?",
-    "answer": "background"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какое ключевое слово используется для объявления константы?",
-    "answer": "const"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для удаления последнего элемента массива?",
-    "options": ["pop", "push", "shift", "unshift"],
-    "answer": "pop"
+    "options": ["h1", "header", "title", "head"],
+    "answer": "h1"
   },
   {
     "category": "HTML",
-    "type": "multiple-choice",
-    "question": "Какой тег используется для вставки изображения?",
-    "options": ["<img>", "<image>", "<src>", "<picture>"],
-    "answer": "<img>"
-  },
-  {
-    "category": "CSS",
     "type": "input",
-    "question": "Какое CSS-свойство используется для изменения размера шрифта?",
-    "answer": "font-size"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какое ключевое слово используется для объявления переменной, доступной только внутри блока?",
-    "answer": "let"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для объединения двух массивов?",
-    "options": ["concat", "join", "merge", "combine"],
-    "answer": "concat"
-  },
-  {
-    "category": "HTML",
-    "type": "multiple-choice",
-    "question": "Какой тег используется для создания списка с маркерами?",
-    "options": ["<ul>", "<ol>", "<li>", "<dl>"],
-    "answer": "<ul>"
-  },
-  {
-    "category": "CSS",
-    "type": "input",
-    "question": "Какое CSS-свойство используется для установки отступа внутри элемента?",
-    "answer": "padding"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой оператор используется для сравнения значений и типов?",
-    "answer": "==="
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для преобразования строки в число?",
-    "options": ["parseInt", "toString", "Number", "parseFloat"],
-    "answer": "parseInt"
-  },
-  {
-    "category": "HTML",
-    "type": "multiple-choice",
-    "question": "Какой тег используется для создания таблицы?",
-    "options": ["<table>", "<tr>", "<td>", "<th>"],
-    "answer": "<table>"
-  },
-  {
-    "category": "CSS",
-    "type": "input",
-    "question": "Какое CSS-свойство используется для установки внешнего отступа элемента?",
-    "answer": "margin"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для преобразования числа в строку?",
-    "answer": "toString"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для поиска элемента в массиве?",
-    "options": ["find", "search", "locate", "indexOf"],
-    "answer": "find"
+    "question": "Какой тег используется для создания ненумерованного списка?",
+    "answer": "ul"
   },
   {
     "category": "HTML",
     "type": "multiple-choice",
     "question": "Какой тег используется для создания строки таблицы?",
-    "options": ["<tr>", "<td>", "<th>", "<table>"],
-    "answer": "<tr>"
+    "options": ["tr", "td", "table", "row"],
+    "answer": "tr"
   },
   {
-    "category": "CSS",
+    "category": "HTML",
     "type": "input",
-    "question": "Какое CSS-свойство используется для установки ширины элемента?",
-    "answer": "width"
+    "question": "Какой тег используется для вставки видео?",
+    "answer": "video"
   },
   {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для добавления элемента в начало массива?",
-    "answer": "unshift"
-  },
-  {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой метод используется для удаления первого элемента массива?",
-    "options": ["shift", "pop", "push", "unshift"],
-    "answer": "shift"
+    "question": "Какой тег используется для вставки аудио?",
+    "options": ["audio", "sound", "music", "voice"],
+    "answer": "audio"
+  },
+  {
+    "category": "HTML",
+    "type": "input",
+    "question": "Какой тег используется для создания формы?",
+    "answer": "form"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания поля ввода текста?",
+    "options": ["input", "textarea", "text", "field"],
+    "answer": "input"
+  },
+  {
+    "category": "HTML",
+    "type": "input",
+    "question": "Какой тег используется для создания кнопки?",
+    "answer": "button"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания выпадающего списка?",
+    "options": ["select", "dropdown", "list", "option"],
+    "answer": "select"
+  },
+  {
+    "category": "HTML",
+    "type": "input",
+    "question": "Какой тег используется для вставки изображения?",
+    "answer": "img"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания ссылки на другой документ?",
+    "options": ["a", "link", "href", "url"],
+    "answer": "a"
+  },
+  {
+    "category": "HTML",
+    "type": "input",
+    "question": "Какой тег используется для создания заголовка второго уровня?",
+    "answer": "h2"
   },
   {
     "category": "HTML",
     "type": "multiple-choice",
     "question": "Какой тег используется для создания ячейки таблицы?",
-    "options": ["<td>", "<tr>", "<th>", "<table>"],
-    "answer": "<td>"
+    "options": ["td", "tr", "table", "cell"],
+    "answer": "td"
   },
   {
-    "category": "CSS",
+    "category": "HTML",
     "type": "input",
-    "question": "Какое CSS-свойство используется для установки высоты элемента?",
-    "answer": "height"
-  },
-  {
-    "category": "JavaScript",
-    "type": "input",
-    "question": "Какой метод используется для проверки, является ли значение массивом?",
-    "answer": "Array.isArray"
-  },
-  {
-    "category": "JavaScript",
-    "type": "multiple-choice",
-    "question": "Какой метод используется для преобразования массива в строку?",
-    "options": ["join", "concat", "split", "toString"],
-    "answer": "join"
+    "question": "Какой тег используется для создания списка определений?",
+    "answer": "dl"
   },
   {
     "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой тег используется для создания заголовка второго уровня?",
-    "options": ["<h2>", "<h1>", "<h3>", "<h4>"],
-    "answer": "<h2>"
+    "question": "Какой тег используется для создания элемента списка определений?",
+    "options": ["dt", "dd", "li", "dl"],
+    "answer": "dt"
   },
   {
-    "category": "CSS",
+    "category": "HTML",
     "type": "input",
-    "question": "Какое CSS-свойство используется для установки цвета фона элемента?",
-    "answer": "background-color"
+    "question": "Какой тег используется для создания заголовка третьего уровня?",
+    "answer": "h3"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки равенства значений?",
-    "options": ["==", "=", "===", "!="],
-    "answer": "=="
+    "question": "Какой тег используется для создания элемента списка?",
+    "options": ["li", "ul", "ol", "item"],
+    "answer": "li"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для присваивания значения переменной?",
-    "answer": "="
+    "question": "Какой тег используется для создания заголовка четвертого уровня?",
+    "answer": "h4"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой тип данных используется для хранения текста?",
-    "options": ["string", "number", "boolean", "object"],
-    "answer": "string"
+    "question": "Какой тег используется для создания элемента списка?",
+    "options": ["li", "ul", "ol", "item"],
+    "answer": "li"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой тип данных используется для хранения чисел?",
-    "answer": "number"
+    "question": "Какой тег используется для создания заголовка четвертого уровня?",
+    "answer": "h4"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой тип данных используется для хранения логических значений?",
-    "options": ["boolean", "string", "number", "object"],
-    "answer": "boolean"
+    "question": "Какой тег используется для создания элемента списка определений?",
+    "options": ["dd", "dt", "li", "dl"],
+    "answer": "dd"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки неравенства значений?",
-    "answer": "!="
+    "question": "Какой тег используется для создания заголовка пятого уровня?",
+    "answer": "h5"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки строгого равенства значений и типов?",
-    "options": ["===", "==", "=", "!=="],
-    "answer": "==="
+    "question": "Какой тег используется для создания элемента формы для ввода пароля?",
+    "options": ["input type='password'", "password", "input type='text'", "form"],
+    "answer": "input type='password'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки строгого неравенства значений и типов?",
-    "answer": "!=="
+    "question": "Какой тег используется для создания заголовка шестого уровня?",
+    "answer": "h6"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для сложения чисел?",
-    "options": ["+", "-", "*", "/"],
-    "answer": "+"
+    "question": "Какой тег используется для создания элемента формы для выбора файла?",
+    "options": ["input type='file'", "file", "input type='text'", "form"],
+    "answer": "input type='file'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для вычитания чисел?",
-    "answer": "-"
+    "question": "Какой тег используется для создания элемента формы для ввода электронной почты?",
+    "answer": "input type='email'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для умножения чисел?",
-    "options": ["*", "+", "-", "/"],
-    "answer": "*"
+    "question": "Какой тег используется для создания элемента формы для ввода даты?",
+    "options": ["input type='date'", "date", "input type='text'", "form"],
+    "answer": "input type='date'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для деления чисел?",
-    "answer": "/"
+    "question": "Какой тег используется для создания элемента формы для ввода времени?",
+    "answer": "input type='time'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки условия?",
-    "options": ["if", "else", "switch", "case"],
-    "answer": "if"
+    "question": "Какой тег используется для создания элемента формы для ввода номера телефона?",
+    "options": ["input type='tel'", "tel", "input type='text'", "form"],
+    "answer": "input type='tel'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для выполнения альтернативного блока кода, если условие ложно?",
-    "answer": "else"
+    "question": "Какой тег используется для создания элемента формы для ввода URL?",
+    "answer": "input type='url'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой цикл используется для выполнения блока кода определенное количество раз?",
-    "options": ["for", "while", "do-while", "foreach"],
-    "answer": "for"
+    "question": "Какой тег используется для создания элемента формы для выбора цвета?",
+    "options": ["input type='color'", "color", "input type='text'", "form"],
+    "answer": "input type='color'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой цикл используется для выполнения блока кода, пока условие истинно?",
-    "answer": "while"
+    "question": "Какой тег используется для создания элемента формы для ввода числа?",
+    "answer": "input type='number'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой тип данных используется для хранения объектов?",
-    "options": ["object", "string", "number", "boolean"],
-    "answer": "object"
+    "question": "Какой тег используется для создания элемента формы для ввода диапазона?",
+    "options": ["input type='range'", "range", "input type='text'", "form"],
+    "answer": "input type='range'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение null или undefined?",
-    "answer": "== null"
+    "question": "Какой тег используется для создания элемента формы для ввода месяца?",
+    "answer": "input type='month'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение истинным?",
-    "options": ["true", "false", "null", "undefined"],
-    "answer": "true"
+    "question": "Какой тег используется для создания элемента формы для ввода недели?",
+    "options": ["input type='week'", "week", "input type='text'", "form"],
+    "answer": "input type='week'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение ложным?",
-    "answer": "false"
+    "question": "Какой тег используется для создания элемента формы для ввода времени с секундами?",
+    "answer": "input type='datetime-local'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение undefined?",
-    "options": ["undefined", "null", "true", "false"],
-    "answer": "undefined"
+    "question": "Какой тег используется для создания элемента формы для выбора нескольких файлов?",
+    "options": ["input type='file' multiple", "file", "input type='text'", "form"],
+    "answer": "input type='file' multiple"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение null?",
-    "answer": "null"
+    "question": "Какой тег используется для создания элемента формы для выбора нескольких значений?",
+    "answer": "select multiple"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение NaN (Not-a-Number)?",
-    "options": ["isNaN", "isNumber", "isString", "isBoolean"],
-    "answer": "isNaN"
+    "question": "Какой тег используется для создания элемента формы для выбора одного значения?",
+    "options": ["select", "dropdown", "list", "option"],
+    "answer": "select"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение числом?",
-    "answer": "typeof value === 'number'"
+    "question": "Какой тег используется для создания элемента формы для ввода скрытого значения?",
+    "answer": "input type='hidden'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение строкой?",
-    "options": ["typeof value === 'string'", "typeof value === 'number'", "typeof value === 'boolean'", "typeof value === 'object'"],
-    "answer": "typeof value === 'string'"
+    "question": "Какой тег используется для создания элемента формы для ввода пароля?",
+    "options": ["input type='password'", "password", "input type='text'", "form"],
+    "answer": "input type='password'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение объектом?",
-    "answer": "typeof value === 'object'"
+    "question": "Какой тег используется для создания элемента формы для ввода текста?",
+    "answer": "textarea"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение булевым?",
-    "options": ["typeof value === 'boolean'", "typeof value === 'string'", "typeof value === 'number'", "typeof value === 'object'"],
-    "answer": "typeof value === 'boolean'"
+    "question": "Какой тег используется для создания элемента формы для выбора даты и времени?",
+    "options": ["input type='datetime-local'", "datetime", "input type='text'", "form"],
+    "answer": "input type='datetime-local'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение функцией?",
-    "answer": "typeof value === 'function'"
+    "question": "Какой тег используется для создания элемента формы для выбора времени?",
+    "answer": "input type='time'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение массивом?",
-    "options": ["Array.isArray(value)", "typeof value === 'array'", "value instanceof Array", "value.constructor === Array"],
-    "answer": "Array.isArray(value)"
+    "question": "Какой тег используется для создания элемента формы для выбора цвета?",
+    "options": ["input type='color'", "color", "input type='text'", "form"],
+    "answer": "input type='color'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение экземпляром класса?",
-    "answer": "value instanceof ClassName"
+    "question": "Какой тег используется для создания элемента формы для ввода числа?",
+    "answer": "input type='number'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение NaN?",
-    "options": ["isNaN(value)", "typeof value === 'NaN'", "value === NaN", "value == NaN"],
-    "answer": "isNaN(value)"
+    "question": "Какой тег используется для создания элемента формы для ввода диапазона?",
+    "options": ["input type='range'", "range", "input type='text'", "form"],
+    "answer": "input type='range'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение null?",
-    "answer": "value === null"
+    "question": "Какой тег используется для создания элемента формы для ввода месяца?",
+    "answer": "input type='month'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение undefined?",
-    "options": ["value === undefined", "typeof value === 'undefined'", "value == undefined", "value === null"],
-    "answer": "value === undefined"
+    "question": "Какой тег используется для создания элемента формы для ввода недели?",
+    "options": ["input type='week'", "week", "input type='text'", "form"],
+    "answer": "input type='week'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение true?",
-    "answer": "value === true"
+    "question": "Какой тег используется для создания элемента формы для ввода времени с секундами?",
+    "answer": "input type='datetime-local'"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "multiple-choice",
-    "question": "Какой оператор используется для проверки, является ли значение false?",
-    "options": ["value === false", "typeof value === 'false'", "value == false", "value === null"],
-    "answer": "value === false"
+    "question": "Какой тег используется для создания элемента формы для выбора нескольких файлов?",
+    "options": ["input type='file' multiple", "file", "input type='text'", "form"],
+    "answer": "input type='file' multiple"
   },
   {
-    "category": "JavaScript",
+    "category": "HTML",
     "type": "input",
-    "question": "Какой оператор используется для проверки, является ли значение строкой?",
-    "answer": "typeof value === 'string'"
+    "question": "Какой тег используется для создания элемента формы для выбора нескольких значений?",
+    "answer": "select multiple"
+  },
+  {
+    "category": "HTML",
+    "type": "multiple-choice",
+    "question": "Какой тег используется для создания элемента формы для выбора одного значения?",
+    "options": ["select", "dropdown", "list", "option"],
+    "answer": "select"
   }
-
 ]
