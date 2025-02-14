@@ -1,740 +1,322 @@
 [
-  
-    {
-      "id": 1,
-      "name": "JavaScript",
-      "info": "Какой оператор используется для присваивания значения переменной?",
-      "type": "multiple",
-      "options": [
-        "=",
-        "==",
-        "===",
-        "=>"
-      ],
-      "correctAnswer": "=",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 2,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения цвета текста?",
-      "type": "multiple",
-      "options": [
-        "color",
-        "background-color",
-        "font-size",
-        "text-align"
-      ],
-      "correctAnswer": "color",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 3,
-      "name": "HTML",
-      "info": "Какой тег используется для создания гиперссылки?",
-      "type": "multiple",
-      "options": [
-        "<a>",
-        "<link>",
-        "<href>",
-        "<url>"
-      ],
-      "correctAnswer": "<a>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 4,
-      "name": "JavaScript",
-      "info": "Какой метод используется для вывода сообщения в консоль?",
-      "type": "multiple",
-      "options": [
-        "console.log()",
-        "alert()",
-        "prompt()",
-        "document.write()"
-      ],
-      "correctAnswer": "console.log()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 5,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения размера шрифта?",
-      "type": "multiple",
-      "options": [
-        "font-size",
-        "font-weight",
-        "text-transform",
-        "line-height"
-      ],
-      "correctAnswer": "font-size",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 6,
-      "name": "HTML",
-      "info": "Какой тег используется для вставки изображения?",
-      "type": "multiple",
-      "options": [
-        "<img>",
-        "<image>",
-        "<pic>",
-        "<src>"
-      ],
-      "correctAnswer": "<img>",
-      "points": 5,
-      "color": "white"
-    },
+  {
+    "id": 1,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания раздела в документе?",
+    "type": "multiple-choice",
+    "options": ["<div>", "<section>", "<article>", "<header>"],
+    "correctAnswer": "<section>",
+    "points": 5,
+    "color": "blue",
+    "category": "HTML5"
+  },
+  {
+    "id": 2,
+    "name": "HTML5",
+    "info": "Какой атрибут используется для указания альтернативного текста для изображения?",
+    "type": "multiple-choice",
+    "options": ["title", "alt", "src", "href"],
+    "correctAnswer": "alt",
+    "points": 5,
+    "color": "green",
+    "category": "HTML5"
+  },
+  {
+    "id": 3,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания гиперссылки?",
+    "type": "multiple-choice",
+    "options": ["<link>", "<href>", "<a>", "<nav>"],
+    "correctAnswer": "<a>",
+    "points": 5,
+    "color": "red",
+    "category": "HTML5"
+  },
+  {
+    "id": 4,
+    "name": "HTML5",
+    "info": "Какой тег используется для вставки изображения?",
+    "type": "multiple-choice",
+    "options": ["<picture>", "<figure>", "<img>", "<src>"],
+    "correctAnswer": "<img>",
+    "points": 5,
+    "color": "yellow",
+    "category": "HTML5"
+  },
+  {
+    "id": 5,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания списка с нумерацией?",
+    "type": "multiple-choice",
+    "options": ["<ul>", "<li>", "<dl>", "<ol>"],
+    "correctAnswer": "<ol>",
+    "points": 5,
+    "color": "purple",
+    "category": "HTML5"
+  },
+  {
+    "id": 6,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания заголовка первого уровня?",
+    "type": "multiple-choice",
+    "options": ["<h2>", "<h3>", "<h4>", "<h1>"],
+    "correctAnswer": "<h1>",
+    "points": 5,
+    "color": "orange",
+    "category": "HTML5"
+  },
+  {
+    "id": 7,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания формы?",
+    "type": "multiple-choice",
+    "options": ["<input>", "<fieldset>", "<label>", "<form>"],
+    "correctAnswer": "<form>",
+    "points": 5,
+    "color": "blue",
+    "category": "HTML5"
+  },
+  {
+    "id": 8,
+    "name": "HTML5",
+    "info": "Какой атрибут используется для указания URL-адреса изображения?",
+    "type": "multiple-choice",
+    "options": ["href", "alt", "title", "src"],
+    "correctAnswer": "src",
+    "points": 5,
+    "color": "green",
+    "category": "HTML5"
+  },
+  {
+    "id": 9,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания таблицы?",
+    "type": "multiple-choice",
+    "options": ["<tr>", "<td>", "<th>", "<table>"],
+    "correctAnswer": "<table>",
+    "points": 5,
+    "color": "red",
+    "category": "HTML5"
+  },
+  {
+    "id": 10,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания строки таблицы?",
+    "type": "multiple-choice",
+    "options": ["<td>", "<th>", "<table>", "<tr>"],
+    "correctAnswer": "<tr>",
+    "points": 5,
+    "color": "yellow",
+    "category": "HTML5"
+  },
+  {
+    "id": 11,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания ячейки таблицы?",
+    "type": "multiple-choice",
+    "options": ["<tr>", "<th>", "<table>", "<td>"],
+    "correctAnswer": "<td>",
+    "points": 5,
+    "color": "purple",
+    "category": "HTML5"
+  },
+  {
+    "id": 12,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания заголовка таблицы?",
+    "type": "multiple-choice",
+    "options": ["<tr>", "<td>", "<table>", "<th>"],
+    "correctAnswer": "<th>",
+    "points": 5,
+    "color": "orange",
+    "category": "HTML5"
+  },
+  {
+    "id": 13,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания списка без нумерации?",
+    "type": "multiple-choice",
+    "options": ["<ol>", "<li>", "<dl>", "<ul>"],
+    "correctAnswer": "<ul>",
+    "points": 5,
+    "color": "blue",
+    "category": "HTML5"
+  },
+  {
+    "id": 14,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания элемента списка?",
+    "type": "multiple-choice",
+    "options": ["<ul>", "<ol>", "<dl>", "<li>"],
+    "correctAnswer": "<li>",
+    "points": 5,
+    "color": "green",
+    "category": "HTML5"
+  },
+  {
+    "id": 15,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания блока цитаты?",
+    "type": "multiple-choice",
+    "options": ["<q>", "<cite>", "<quote>", "<blockquote>"],
+    "correctAnswer": "<blockquote>",
+    "points": 5,
+    "color": "red",
+    "category": "HTML5"
+  },
+  {
+    "id": 16,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания короткой цитаты?",
+    "type": "multiple-choice",
+    "options": ["<blockquote>", "<cite>", "<quote>", "<q>"],
+    "correctAnswer": "<q>",
+    "points": 5,
+    "color": "yellow",
+    "category": "HTML5"
+  },
+  {
+    "id": 28,
+    "name": "HTML5",
+    "info": "Введите тег для создания курсивного текста.",
+    "type": "input",
+    "correctAnswer": "<i>",
+    "points": 5,
+    "color": "green",
+    "category": "HTML5"
+  },
+  {
+    "id": 29,
+    "name": "HTML5",
+    "info": "Введите тег для создания заголовка третьего уровня.",
+    "type": "input",
+    "correctAnswer": "<h3>",
+    "points": 5,
+    "color": "red",
+    "category": "HTML5"
+  },
+  {
+    "id": 30,
+    "name": "HTML5",
+    "info": "Введите тег для создания заголовка четвертого уровня.",
+    "type": "input",
+    "correctAnswer": "<h4>",
+    "points": 5,
+    "color": "yellow",
+    "category": "HTML5"
+  },
+  {
+    "id": 17,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания выделенного текста?",
+    "type": "multiple-choice",
+    "options": ["<strong>", "<em>", "<b>", "<mark>"],
+    "correctAnswer": "<mark>",
+    "points": 5,
+    "color": "purple",
+    "category": "HTML5"
+  },
+  {
+    "id": 18,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания жирного текста?",
+    "type": "multiple-choice",
+    "options": ["<strong>", "<em>", "<mark>", "<b>"],
+    "correctAnswer": "<b>",
+    "points": 5,
+    "color": "orange",
+    "category": "HTML5"
+  },
+  {
+    "id": 19,
+    "name": "HTML5",
+    "info": "Какой тег используется для создания курсивного текста?",
+    "type": "multiple-choice",
+    "options": ["<em>", "<b>", "<mark>", "<i>"],
+    "correctAnswer": "<i>",
+    "points": 5,
+    "color": "blue",
+    "category": "HTML5"
+  },
+  {
+    "id": 20,
+    "name": "HTML5",
+    "info": "Введите тег для создания гиперссылки.",
+    "type": "input",
+    "correctAnswer": "<a>",
+    "points": 5,
+    "color": "green",
+    "category": "HTML5"
+  },
+  {
+    "id": 21,
+    "name": "HTML5",
+    "info": "Введите тег для создания изображения.",
+    "type": "input",
+    "correctAnswer": "<img>",
+    "points": 5,
+    "color": "blue",
+    "category": "HTML5"
+  },
+  {
+    "id": 22,
+    "name": "HTML5",
+    "info": "Введите тег для создания заголовка второго уровня.",
+    "type": "input",
+    "correctAnswer": "<h2>",
+    "points": 5,
+    "color": "green",
+    "category": "HTML5"
+  },
+  {
+    "id": 23,
+    "name": "HTML5",
+    "info": "Введите тег для создания элемента списка.",
+    "type": "input",
+    "correctAnswer": "<li>",
+    "points": 5,
+    "color": "red",
+    "category": "HTML5"
+  },
+  {
+    "id": 24,
+    "name": "HTML5",
+    "info": "Введите тег для создания блока цитаты.",
+    "type": "input",
+    "correctAnswer": "<blockquote>",
+    "points": 5,
+    "color": "yellow",
+    "category": "HTML5"
+  },
+  {
+    "id": 25,
+    "name": "HTML5",
+    "info": "Введите тег для создания короткой цитаты.",
+    "type": "input",
+    "correctAnswer": "<q>",
+    "points": 5,
+    "color": "purple",
+    "category": "HTML5"
+  },
+  {
+    "id": 26,
+    "name": "HTML5",
+    "info": "Введите тег для создания выделенного текста.",
+    "type": "input",
+    "correctAnswer": "<mark>",
+    "points": 5,
+    "color": "orange",
+    "category": "HTML5"
+  },
+  {
+    "id": 27,
+    "name": "HTML5",
+    "info": "Введите тег для создания жирного текста.",
+    "type": "input",
+    "correctAnswer": "<b>",
+    "points": 5,
+    "color": "blue",
+    "category": "HTML5"
+  }
 
-    {
-      "id": 7,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения фона элемента?",
-      "type": "multiple",
-      "options": [
-        "background-color",
-        "color",
-        "border-color",
-        "font-color"
-      ],
-      "correctAnswer": "background-color",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 8,
-      "name": "HTML",
-      "info": "Какой тег используется для создания списка с нумерацией?",
-      "type": "multiple",
-      "options": [
-        "<ol>",
-        "<ul>",
-        "<li>",
-        "<list>"
-      ],
-      "correctAnswer": "<ol>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 9,
-      "name": "JavaScript",
-      "info": "Какой тип данных используется для хранения текста?",
-      "type": "multiple",
-      "options": [
-        "String",
-        "Number",
-        "Boolean",
-        "Object"
-      ],
-      "correctAnswer": "String",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 10,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения ширины элемента?",
-      "type": "multiple",
-      "options": [
-        "width",
-        "height",
-        "margin",
-        "padding"
-      ],
-      "correctAnswer": "width",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 11,
-      "name": "HTML",
-      "info": "Какой тег используется для создания абзаца?",
-      "type": "multiple",
-      "options": [
-        "<p>",
-        "<div>",
-        "<span>",
-        "<section>"
-      ],
-      "correctAnswer": "<p>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 12,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования строки в число?",
-      "type": "multiple",
-      "options": [
-        "parseInt()",
-        "toString()",
-        "Number()",
-        "String()"
-      ],
-      "correctAnswer": "parseInt()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 13,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения высоты элемента?",
-      "type": "multiple",
-      "options": [
-        "height",
-        "width",
-        "margin",
-        "padding"
-      ],
-      "correctAnswer": "height",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 14,
-      "name": "HTML",
-      "info": "Какой тег используется для создания таблицы?",
-      "type": "multiple",
-      "options": [
-        "<table>",
-        "<tr>",
-        "<td>",
-        "<th>"
-      ],
-      "correctAnswer": "<table>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 15,
-      "name": "JavaScript",
-      "info": "Какой тип данных используется для хранения логических значений?",
-      "type": "multiple",
-      "options": [
-        "Boolean",
-        "String",
-        "Number",
-        "Object"
-      ],
-      "correctAnswer": "Boolean",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 16,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения отступа внутри элемента?",
-      "type": "multiple",
-      "options": [
-        "padding",
-        "margin",
-        "border",
-        "outline"
-      ],
-      "correctAnswer": "padding",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 17,
-      "name": "HTML",
-      "info": "Какой тег используется для создания заголовка первого уровня?",
-      "type": "multiple",
-      "options": [
-        "<h1>",
-        "<h2>",
-        "<h3>",
-        "<h4>"
-      ],
-      "correctAnswer": "<h1>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 18,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования числа в строку?",
-      "type": "multiple",
-      "options": [
-        "toString()",
-        "parseInt()",
-        "Number()",
-        "String()"
-      ],
-      "correctAnswer": "toString()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 19,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения внешнего отступа элемента?",
-      "type": "multiple",
-      "options": [
-        "margin",
-        "padding",
-        "border",
-        "outline"
-      ],
-      "correctAnswer": "margin",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 20,
-      "name": "HTML",
-      "info": "Какой тег используется для создания строки таблицы?",
-      "type": "multiple",
-      "options": [
-        "<tr>",
-        "<td>",
-        "<th>",
-        "<table>"
-      ],
-      "correctAnswer": "<tr>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 21,
-      "name": "JavaScript",
-      "info": "Какой тип данных используется для хранения чисел?",
-      "type": "multiple",
-      "options": [
-        "Number",
-        "String",
-        "Boolean",
-        "Object"
-      ],
-      "correctAnswer": "Number",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 22,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения стиля шрифта?",
-      "type": "multiple",
-      "options": [
-        "font-style",
-        "font-weight",
-        "font-size",
-        "font-family"
-      ],
-      "correctAnswer": "font-style",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 23,
-      "name": "HTML",
-      "info": "Какой тег используется для создания ячейки таблицы?",
-      "type": "multiple",
-      "options": [
-        "<td>",
-        "<tr>",
-        "<th>",
-        "<table>"
-      ],
-      "correctAnswer": "<td>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 24,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования строки в число с плавающей точкой?",
-      "type": "multiple",
-      "options": [
-        "parseFloat()",
-        "parseInt()",
-        "Number()",
-        "String()"
-      ],
-      "correctAnswer": "parseFloat()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 25,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения семейства шрифта?",
-      "type": "multiple",
-      "options": [
-        "font-family",
-        "font-style",
-        "font-weight",
-        "font-size"
-      ],
-      "correctAnswer": "font-family",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 26,
-      "name": "HTML",
-      "info": "Какой тег используется для создания заголовка второго уровня?",
-      "type": "multiple",
-      "options": [
-        "<h2>",
-        "<h1>",
-        "<h3>",
-        "<h4>"
-      ],
-      "correctAnswer": "<h2>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 27,
-      "name": "JavaScript",
-      "info": "Какой тип данных используется для хранения объектов?",
-      "type": "multiple",
-      "options": [
-        "Object",
-        "String",
-        "Number",
-        "Boolean"
-      ],
-      "correctAnswer": "Object",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 28,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения толщины шрифта?",
-      "type": "multiple",
-      "options": [
-        "font-weight",
-        "font-style",
-        "font-size",
-        "font-family"
-      ],
-      "correctAnswer": "font-weight",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 29,
-      "name": "HTML",
-      "info": "Какой тег используется для создания заголовка третьего уровня?",
-      "type": "multiple",
-      "options": [
-        "<h3>",
-        "<h1>",
-        "<h2>",
-        "<h4>"
-      ],
-      "correctAnswer": "<h3>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 30,
-      "name": "JavaScript",
-      "info": "Какой метод используется для проверки типа переменной?",
-      "type": "multiple",
-      "options": [
-        "typeof",
-        "instanceof",
-        "isType",
-        "checkType"
-      ],
-      "correctAnswer": "typeof",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 31,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения выравнивания текста?",
-      "type": "multiple",
-      "options": [
-        "text-align",
-        "vertical-align",
-        "align-items",
-        "justify-content"
-      ],
-      "correctAnswer": "text-align",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 32,
-      "name": "HTML",
-      "info": "Какой тег используется для создания заголовка четвертого уровня?",
-      "type": "multiple",
-      "options": [
-        "<h4>",
-        "<h1>",
-        "<h2>",
-        "<h3>"
-      ],
-      "correctAnswer": "<h4>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 33,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования значения в строку?",
-      "type": "multiple",
-      "options": [
-        "String()",
-        "toString()",
-        "parseString()",
-        "convertToString()"
-      ],
-      "correctAnswer": "String()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 34,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения стиля границы элемента?",
-      "type": "multiple",
-      "options": [
-        "border-style",
-        "border-width",
-        "border-color",
-        "border-radius"
-      ],
-      "correctAnswer": "border-style",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 35,
-      "name": "HTML",
-      "info": "Какой тег используется для создания заголовка пятого уровня?",
-      "type": "multiple",
-      "options": [
-        "<h5>",
-        "<h1>",
-        "<h2>",
-        "<h3>"
-      ],
-      "correctAnswer": "<h5>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 36,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования значения в число?",
-      "type": "multiple",
-      "options": [
-        "Number()",
-        "parseInt()",
-        "toNumber()",
-        "convertToNumber()"
-      ],
-      "correctAnswer": "Number()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 37,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения радиуса границы элемента?",
-      "type": "multiple",
-      "options": [
-        "border-radius",
-        "border-width",
-        "border-color",
-        "border-style"
-      ],
-      "correctAnswer": "border-radius",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 38,
-      "name": "HTML",
-      "info": "Какой тег используется для создания заголовка шестого уровня?",
-      "type": "multiple",
-      "options": [
-        "<h6>",
-        "<h1>",
-        "<h2>",
-        "<h3>"
-      ],
-      "correctAnswer": "<h6>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 39,
-      "name": "JavaScript",
-      "info": "Какой метод используется для проверки, является ли значение NaN?",
-      "type": "multiple",
-      "options": [
-        "isNaN()",
-        "isNumber()",
-        "checkNaN()",
-        "isNotANumber()"
-      ],
-      "correctAnswer": "isNaN()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 40,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения цвета границы элемента?",
-      "type": "multiple",
-      "options": [
-        "border-color",
-        "border-width",
-        "border-style",
-        "border-radius"
-      ],
-      "correctAnswer": "border-color",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 41,
-      "name": "HTML",
-      "info": "Какой тег используется для создания раздела в документе?",
-      "type": "multiple",
-      "options": [
-        "<section>",
-        "<div>",
-        "<span>",
-        "<article>"
-      ],
-      "correctAnswer": "<section>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 42,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования значения в булево значение?",
-      "type": "multiple",
-      "options": [
-        "Boolean()",
-        "toBoolean()",
-        "convertToBoolean()",
-        "parseBoolean()"
-      ],
-      "correctAnswer": "Boolean()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 43,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения ширины границы элемента?",
-      "type": "multiple",
-      "options": [
-        "border-width",
-        "border-color",
-        "border-style",
-        "border-radius"
-      ],
-      "correctAnswer": "border-width",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 44,
-      "name": "HTML",
-      "info": "Какой тег используется для создания контейнера для контента?",
-      "type": "multiple",
-      "options": [
-        "<div>",
-        "<span>",
-        "<section>",
-        "<article>"
-      ],
-      "correctAnswer": "<div>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 45,
-      "name": "JavaScript",
-      "info": "Какой метод используется для проверки, является ли значение массивом?",
-      "type": "multiple",
-      "options": [
-        "Array.isArray()",
-        "isArray()",
-        "checkArray()",
-        "isAnArray()"
-      ],
-      "correctAnswer": "Array.isArray()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 46,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения прозрачности элемента?",
-      "type": "multiple",
-      "options": [
-        "opacity",
-        "visibility",
-        "display",
-        "filter"
-      ],
-      "correctAnswer": "opacity",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 47,
-      "name": "HTML",
-      "info": "Какой тег используется для создания строки в таблице?",
-      "type": "multiple",
-      "options": [
-        "<tr>",
-        "<td>",
-        "<th>",
-        "<table>"
-      ],
-      "correctAnswer": "<tr>",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 48,
-      "name": "JavaScript",
-      "info": "Какой метод используется для преобразования значения в объект?",
-      "type": "multiple",
-      "options": [
-        "Object()",
-        "toObject()",
-        "convertToObject()",
-        "parseObject()"
-      ],
-      "correctAnswer": "Object()",
-      "points": 5,
-      "color": "white"
-    },
-    {
-      "id": 49,
-      "name": "CSS",
-      "info": "Какое свойство используется для изменения видимости элемента?",
-      "type": "multiple",
-      "options": [
-        "visibility",
-        "display",
-        "opacity",
-        "filter"
-      ],
-      "correctAnswer": "visibility",
-      "points": 5,
-      "color": "white"
-    }
-  
 ]

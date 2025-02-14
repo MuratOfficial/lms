@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from 'react';
 
@@ -9,16 +9,20 @@ interface QuestionCardProps {
   type: string;
   index: number;
   handleAnswer: (index: number, isCorrect: boolean) => void;
+  username: string;
+  points: number;
 }
 
-const QuestionCard: React.FC<QuestionCardProps> = ({ question, options, answer, type, index, handleAnswer }) => {
+const QuestionCard: React.FC<QuestionCardProps> = ({ question, options, answer, type, index, handleAnswer, username, points }) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
   const handleOptionChange = (option: string) => {
     setSelectedOption(option);
-    handleAnswer(index, option === answer);
+    const isCorrect = option === answer;
+    handleAnswer(index, isCorrect);
+    updateScore(isCorrect);
     setIsSubmitted(true);
   };
 
@@ -27,8 +31,22 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, options, answer, 
   };
 
   const handleSubmit = () => {
-    handleAnswer(index, userAnswer.trim().toLowerCase() === answer.trim().toLowerCase());
+    const isCorrect = userAnswer.trim().toLowerCase() === answer.trim().toLowerCase();
+    handleAnswer(index, isCorrect);
+    updateScore(isCorrect);
     setIsSubmitted(true);
+  };
+
+  const updateScore = (isCorrect: boolean) => {
+    if (isCorrect) {
+      fetch('/api/update-score', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, points }),
+      });
+    }
   };
 
   return (

@@ -1,20 +1,27 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react';
 import QuestionCard from '@/components/questions-card';
-
+import Tabs from '@/components/tabs';
+import UsernameForm from '@/components/username-form';
+import { useState, useEffect } from 'react';
 interface Question {
-  category: string;
+  id: number;
+  name: string;
+  info: string;
   type: string;
-  question: string;
   options?: string[];
-  answer: string;
+  correctAnswer: string;
+  points: number;
+  color: string;
+  category: string;
 }
 
 const Home: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<boolean[]>([]);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [username, setUsername] = useState<string | null>(null);
+  const [currentCategory, setCurrentCategory] = useState<string>('JavaScript');
 
   useEffect(() => {
     fetch('/api/questions')
@@ -33,23 +40,48 @@ const Home: React.FC = () => {
 
   const handleSubmit = () => {
     setIsSubmitted(true);
+    const score = answers.filter(Boolean).length;
+    // Запись никнейма и баллов в JSON файл
+    fetch('/api/save-score', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, score }),
+    });
+  };
+
+  const handleUsernameSubmit = (username: string) => {
+    setUsername(username);
   };
 
   const score = answers.filter(Boolean).length;
 
+  if (!username) {
+    return <UsernameForm onSubmit={handleUsernameSubmit} />;
+  }
+
+  const categories = Array.from(new Set(questions.map(q => q.category)));
+
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Квиз</h1>
+      <div className="mb-4">
+        <span className="text-lg font-semibold">Никнейм: {username}</span>
+      </div>
+      <Tabs categories={categories} currentCategory={currentCategory} setCurrentCategory={setCurrentCategory} />
       <div className="grid grid-cols-1 gap-4">
-        {questions.map((question, index) => (
+        {questions.filter(q => q.category === currentCategory).map((question, index) => (
           <QuestionCard
             key={index}
             index={index}
-            question={question.question}
+            question={question.info}
             options={question.options}
-            answer={question.answer}
+            answer={question.correctAnswer}
             type={question.type}
             handleAnswer={handleAnswer}
+            username={username}
+            points={question.points}
           />
         ))}
       </div>
